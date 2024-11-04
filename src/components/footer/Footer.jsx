@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <div>
       <div className="w-10/12 mx-auto grid-flow-col items-center text-center mb-5">
-        <h3> ACME Industries Ltd.</h3>
-        <p>Providing reliable tech since 1992</p>
+        <h3 className="text-2xl font-bold"> Gadget World</h3>
+        <p>Providing reliable tech since 2012</p>
       </div>
       <footer className="border">
         <div className="w-10/12 mx-auto footer p-10 flex justify-between gap-10">
