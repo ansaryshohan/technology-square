@@ -1,0 +1,274 @@
+[
+  {
+    "product_id": "CMP001",
+    "name": "Dell XPS 15",
+    "image": "https://i.ibb.co.com/Y28v7dF/XPS-15-9530-a-9440.jpg",
+    "category": "computer",
+    "price": 1499.99,
+    "description": "Dell XPS 15 with Intel i7 processor, 16GB RAM, 512GB SSD.",
+    "specification": [
+      "Intel Core i7-10750H",
+      "16GB DDR4 RAM",
+      "512GB SSD",
+      "15.6-inch 4K UHD Touch Display",
+      "NVIDIA GTX 1650 Ti"
+    ],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "CMP002",
+    "name": "Apple MacBook Pro 13",
+    "image": "https://i.ibb.co.com/yhZVZsB/macbook13.jpg",
+    "category": "computer",
+    "price": 1299.99,
+    "description": "Apple MacBook Pro 13-inch with M1 Chip, 8GB RAM, 256GB SSD.",
+    "specification": [
+      "Apple M1 Chip",
+      "8GB Unified Memory",
+      "256GB SSD",
+      "13.3-inch Retina Display",
+      "Up to 20 hours battery life"
+    ],
+    "availability": "Out of Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "CMP003",
+    "name": "HP Pavilion Gaming",
+    "image": "https://i.ibb.co.com/SxxQGpY/Hp-Pavilion-Gaming15-1.jpg",
+    "category": "computer",
+    "price": 999.99,
+    "description": "HP Pavilion Gaming laptop with AMD Ryzen 5 processor, 8GB RAM, 256GB SSD.",
+    "specification": [
+      "AMD Ryzen 5 4600H",
+      "8GB DDR4 RAM",
+      "256GB SSD",
+      "15.6-inch Full HD Display",
+      "NVIDIA GTX 1650"
+    ],
+    "availability": "In Stock",
+    "rating": 4.3
+  },
+  {
+    "product_id": "CMP004",
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "image": "https://i.ibb.co.com/0Vf1M4z/Lenovo-X1-Carbon-Used-1024x.webp",
+    "category": "computer",
+    "price": 1399.99,
+    "description": "Lenovo ThinkPad X1 Carbon with Intel i5 processor, 8GB RAM, 256GB SSD.",
+    "specification": [
+      "Intel Core i5-10310U",
+      "8GB LPDDR3 RAM",
+      "256GB SSD",
+      "14-inch Full HD Display",
+      "Fingerprint reader"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "CMP005",
+    "name": "Acer Aspire 5",
+    "image": "https://i.ibb.co.com/6gBvqfQ/acer-aspire-5-price-in-bangladesh.webp",
+    "category": "computer",
+    "price": 549.99,
+    "description": "Acer Aspire 5 with Intel i5 processor, 8GB RAM, 256GB SSD.",
+    "specification": [
+      "Intel Core i5-1135G7",
+      "8GB DDR4 RAM",
+      "256GB SSD",
+      "15.6-inch Full HD Display",
+      "Backlit keyboard"
+    ],
+    "availability": "In Stock",
+    "rating": 4.2
+  },
+  {
+    "product_id": "CMP006",
+    "name": "ASUS ROG Zephyrus G14",
+    "image": "https://i.ibb.co.com/fGfJ5bF/Asus-ROG-Zephyrus-9-1.webp",
+    "category": "computer",
+    "price": 1449.99,
+    "description": "ASUS ROG Zephyrus G14 with AMD Ryzen 9 processor, 16GB RAM, 1TB SSD.",
+    "specification": [
+      "AMD Ryzen 9 4900HS",
+      "16GB DDR4 RAM",
+      "1TB SSD",
+      "14-inch WQHD Display",
+      "NVIDIA RTX 2060"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "MBL001",
+    "name": "iPhone 13 Pro",
+    "image": "https://i.ibb.co.com/t3MTX6h/iphone-13-pro-max-328530-600x.webp",
+    "category": "phones",
+    "price": 999.99,
+    "description": "Apple iPhone 13 Pro with A15 Bionic chip, 128GB storage, 6.1-inch Super Retina XDR display.",
+    "specification": [
+      "A15 Bionic chip",
+      "128GB Storage",
+      "6.1-inch Super Retina XDR Display",
+      "Triple 12MP Camera System",
+      "5G Capable"
+    ],
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": "MBL002",
+    "name": "Samsung Galaxy S21",
+    "image": "https://i.ibb.co.com/N9wQhKB/Samsung-Galaxy-S21-Ultra-5-G-500x500.webp",
+    "category": "phones",
+    "price": 799.99,
+    "description": "Samsung Galaxy S21 with Exynos 2100 processor, 8GB RAM, 128GB storage.",
+    "specification": [
+      "Exynos 2100 Processor",
+      "8GB RAM",
+      "128GB Storage",
+      "6.2-inch FHD+ Dynamic AMOLED Display",
+      "Triple Rear Camera"
+    ],
+    "availability": "In Stock",
+    "rating": 3.7
+  },
+  {
+    "product_id": "MBL003",
+    "name": "Google Pixel 6",
+    "image": "https://i.ibb.co.com/2vrwF5f/Google-Pixel-6-Price-in-bangladesh.jpg",
+    "category": "phones",
+    "price": 599.99,
+    "description": "Google Pixel 6 with Google Tensor chip, 8GB RAM, 128GB storage.",
+    "specification": [
+      "Google Tensor Processor",
+      "8GB RAM",
+      "128GB Storage",
+      "6.4-inch AMOLED Display",
+      "50MP Dual Rear Camera"
+    ],
+    "availability": "Out of Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "SWT001",
+    "name": "Apple Watch Series 7",
+    "image": "https://i.ibb.co.com/2cNmKmZ/apple-watch7.jpg",
+    "category": "smart watch",
+    "price": 399.99,
+    "description": "Apple Watch Series 7 with a larger, always-on Retina display and advanced health tracking.",
+    "specification": [
+      "41mm or 45mm case",
+      "Always-On Retina Display",
+      "Blood Oxygen and ECG apps",
+      "Water Resistant up to 50 meters",
+      "Up to 18 hours battery life"
+    ],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "SWT002",
+    "name": "Samsung Galaxy Watch 4",
+    "image": "https://i.ibb.co.com/d0Kw74B/galaxy-watch4-silver.webp",
+    "category": "smart watch",
+    "price": 249.99,
+    "description": "Samsung Galaxy Watch 4 with advanced body composition analysis and heart rate monitoring.",
+    "specification": [
+      "40mm or 44mm case",
+      "Super AMOLED Display",
+      "Body Composition Analysis",
+      "Heart Rate and ECG monitoring",
+      "Up to 40 hours battery life"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "SWT003",
+    "name": "Fitbit Versa 3",
+    "image": "https://i.ibb.co.com/k5SxvcF/Fitbit-Versa-3-Smart-Watch-Black-9119.jpg",
+    "category": "smart watch",
+    "price": 229.99,
+    "description": "Fitbit Versa 3 with built-in GPS, heart rate monitoring, and support for voice assistants.",
+    "specification": [
+      "Built-in GPS",
+      "24/7 Heart Rate Monitoring",
+      "SpO2 Monitoring",
+      "Alexa and Google Assistant support",
+      "Up to 6 days battery life"
+    ],
+    "availability": "Out of Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "CHR001",
+    "name": "Anker PowerPort III Nano",
+    "image": "https://i.ibb.co.com/Pcxv7Rz/Anker-Power-Port-III-Nano-20-W-price.png",
+    "category": "charger",
+    "price": 15.99,
+    "description": "Anker PowerPort III Nano compact USB-C charger with 20W power output.",
+    "specification": [
+      "20W Power Output",
+      "USB-C Compatibility",
+      "Compact Size",
+      "Fast Charging Technology",
+      "Overvoltage Protection"
+    ],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "CHR002",
+    "name": "Apple 20W USB-C Power Adapter",
+    "image": "https://i.ibb.co.com/x3FKRZB/fe02d766-eee5-4c27-bb0f-795a299eea1b.jpg",
+    "category": "charger",
+    "price": 19.99,
+    "description": "Apple 20W USB-C Power Adapter for fast charging iPhones and iPads.",
+    "specification": [
+      "20W Power Output",
+      "USB-C Compatibility",
+      "Optimized for iPhones and iPads",
+      "Compact Design",
+      "Fast Charging"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "PWB001",
+    "name": "Anker PowerCore 10000",
+    "image": "https://i.ibb.co.com/k0zzxSH/Powercore-Select-1000-1.png",
+    "category": "power bank",
+    "price": 25.99,
+    "description": "Anker PowerCore 10000 compact power bank with 10,000mAh capacity.",
+    "specification": [
+      "10,000mAh Capacity",
+      "Ultra-Compact Design",
+      "PowerIQ Technology",
+      "High-Speed Charging",
+      "Multiple Device Compatibility"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "PWB002",
+    "name": "Samsung 25W Wireless Portable Battery",
+    "image": "https://i.ibb.co.com/GTTbWGb/Samsung-10000-m-Ah-Super-Fast-25-W.webp",
+    "category": "power bank",
+    "price": 49.99,
+    "description": "Samsung 25W wireless portable battery with 10,000mAh capacity and wireless charging support.",
+    "specification": [
+      "10,000mAh Capacity",
+      "25W Fast Charging",
+      "Wireless Charging Support",
+      "Dual Output Ports",
+      "USB-C Port"
+    ],
+    "availability": "Out of Stock",
+    "rating": 4.5
+  }
+]
