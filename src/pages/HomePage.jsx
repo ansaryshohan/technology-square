@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import HeroSection from "../components/homePageComponent/HeroSection";
+import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -12,10 +13,13 @@ const HomePage = () => {
       navigate("/");
     }
     sessionStorage.setItem("isReload", true);
-  }, []);
+  }, [navigate]);
 
   return (
     <div>
+      <Helmet>
+        <title>HomePage- Gadget World</title>
+      </Helmet>
       <HeroSection />
       <Outlet />
     </div>

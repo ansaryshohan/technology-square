@@ -19,7 +19,7 @@ const CategorySection = ({ handleProducts }) => {
   }, []);
 
   return (
-    <div className="flex lg:flex-col border sticky top-5">
+    <div className="flex lg:flex-col border sticky top-20">
       {categories?.map((category) => (
         <div key={category.id} className=" text-center capitalize">
           <NavLink

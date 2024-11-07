@@ -4,6 +4,11 @@ import MainLayout from "../layouts/MainLayout";
 import ErrorPage from "../pages/ErrorPage";
 import HomePage from "../pages/HomePage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
+import DashboardPage from "../pages/DashboardPage";
+import CartCards from "../components/dashboardComponent/CartCards";
+import WishListCards from "../components/dashboardComponent/WishListCards";
+import StatisticsPage from "../pages/StatisticsPage";
+import ContactUsPage from "../pages/ContactUsPage";
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +36,32 @@ const routes = createBrowserRouter([
         path: "/product/:productId",
         loader: () => fetch("/product.json"),
         element: <ProductDetailsPage />,
+      },
+      {
+        path: "/dashboard",
+        element: <DashboardPage/>,
+        children:[
+          {
+            index:true,
+            element:<CartCards/>
+          },
+          {
+           path:"cart",
+           element:<CartCards/> 
+          },
+          {
+           path:"wishlist",
+           element:<WishListCards/> 
+          }
+        ]
+      },
+      {
+        path: "/statistics",
+        element: <StatisticsPage/>,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUsPage/>,
       },
     ],
   },

@@ -1,11 +1,11 @@
-import { useState } from "react";
 import { IoCartOutline, IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import ReactStars from "react-rating-stars-component";
 import { toast } from "react-toastify";
+import useCartContext from "../../hooks/useCartContext";
 
 const ProductDetailsCard = ({ productData }) => {
-  const [wishList, setWishList] = useState([]);
-  const [isWishListed, setIsWishListed] = useState(false);
+  const { wishList, setWishList, handleAddToCart } = useCartContext();
+
   const {
     product_id,
     name,
@@ -16,16 +16,22 @@ const ProductDetailsCard = ({ productData }) => {
     availability,
     rating,
   } = productData;
+  console.log(wishList);
 
-  const handleWishlist = (productId) => {
-    const existInWishList = wishList.find((product) => product === productId);
+  const handleWishlist = (product) => {
+    const existInWishList = wishList.find(
+      (singleWishList) => singleWishList.product_id === product.product_id
+    );
     // console.log(existInWishList);
-    if (!existInWishList) { 
-      setWishList([...wishList, productId]);
-      setIsWishListed(true)
-      toast.success("Product added is wishlist")
-    } 
+    if (!existInWishList) {
+      setWishList([...wishList, product]);
+      toast.success("Product added is wishlist");
+    }
   };
+
+  const isProductInWishlist = wishList.find(
+    (singleWishListProduct) => singleWishListProduct.product_id === product_id
+  );
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 ">
@@ -77,21 +83,26 @@ const ProductDetailsCard = ({ productData }) => {
               </div>
             </div>
             <div className="card-actions justify-start">
-              <button className="btn btn-primary text-lg rounded-3xl">
+              {/* add to cart button */}
+              <button
+                className="btn btn-primary text-lg rounded-3xl"
+                onClick={() => handleAddToCart(productData)}
+              >
                 Add to cart <IoCartOutline />
               </button>
-              {isWishListed ? (
+              {/* add in wishlist button */}
+              {isProductInWishlist ? (
                 <button
                   className="btn text-2xl px-2 py-1"
-                  onClick={() => handleWishlist(product_id)}
-                  disabled={isWishListed}
+                  onClick={() => handleWishlist(productData)}
+                  disabled={isProductInWishlist ? true : false}
                 >
                   <IoHeartSharp color="red" />
                 </button>
               ) : (
                 <button
-                  className="btn text-2xl border-2 border-red-500"
-                  onClick={() => handleWishlist(product_id)}
+                  className="btn text-2xl px-2 py-1"
+                  onClick={() => handleWishlist(productData)}
                 >
                   <IoHeartOutline />
                 </button>

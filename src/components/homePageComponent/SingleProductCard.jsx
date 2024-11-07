@@ -15,15 +15,14 @@ const SingleProductCard = ({ product }) => {
       <div className="card-body">
         <h2 className="card-title">
           {name}
-          <div className="badge badge-secondary">new</div>
         </h2>
         <p>price : {price} $</p>
         <div className="card-actions justify-center mt-1">
           <button
-            className="badge badge-outline"
+            className="btn btn-secondary"
             onClick={() => navigate(`/product/${product_id}`)}
           >
-            See detail
+            See details
           </button>
         </div>
       </div>
