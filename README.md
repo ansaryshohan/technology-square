@@ -1,8 +1,23 @@
-# React + Vite
+# Project Name : [Gadget-world](https://despicable11.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **About the Project**
+>>> This project is done with `React.js`,`Tailwind css`,`React-router-dom`. the project is on e-commerce gadgets, where you can buy different products.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Key features of  the Project**
+* This is a project for buying gadgets.
+* Choose product and buy them.
+* Cart and wishlist is also implemented.
+* Cart data can be sorted based on prices.
+* you can see the prices statistics.
+
+
+
+## **Technology used here :**
++ `React js`.
++ `React-router-dom`.
++ `React-helmet`.
++ `React-toastify` .
++ `React icons`.
+
+---

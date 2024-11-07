@@ -1,7 +1,7 @@
 import { IoOptionsSharp } from "react-icons/io5";
 import useCartContext from "../../hooks/useCartContext";
-import CartSingleCard from "./CartSingleCard";
 import ModalContent from "../modals/ModalContent";
+import CartSingleCard from "./CartSingleCard";
 
 const CartCards = () => {
   const { cartData, setCartData } = useCartContext();
@@ -15,14 +15,13 @@ const CartCards = () => {
     setCartData(sortByPriceArray);
   };
 
-  const handlePurchaseModal=()=>{
+  const handlePurchaseModal = () => {
     document.getElementById("purchase-modal").showModal();
-  }
+  };
 
   return (
     <div>
-      
-      <ModalContent totalPrice={totalPrice}/>
+      <ModalContent totalPrice={totalPrice} />
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-bold">Cart</h3>
         <div className="flex items-center justify-center gap-3">
@@ -40,6 +39,7 @@ const CartCards = () => {
             <button
               className="px-4 py-2 bg-purple-700 text-white text-base font-semibold rounded-3xl"
               onClick={handlePurchaseModal}
+              disabled={cartData.length === 0 ? true : false}
             >
               Purchase
             </button>

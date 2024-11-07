@@ -1,9 +1,9 @@
+import { toast } from "react-toastify";
 import useCartContext from "../../hooks/useCartContext";
 
 const WishListSingleCard = ({ singleWishlistData }) => {
-  const { handleAddToCart, wishList,setWishList } = useCartContext();
+  const { handleAddToCart, wishList, setWishList } = useCartContext();
   const { name, image, price, description } = singleWishlistData;
-  // console.log(singleWishlistData);
 
   const handleWishlistCart = (product) => {
     handleAddToCart(product);
@@ -11,6 +11,13 @@ const WishListSingleCard = ({ singleWishlistData }) => {
       (singleData) => singleData.product_id !== product.product_id
     );
     setWishList(remainingInWishList);
+  };
+  const handleWishListDelete = (product) => {
+    const remaining = wishList.filter(
+      (singleData) => singleData.product_id !== product.product_id
+    );
+    setWishList(remaining);
+    toast.error(`${product.name} is deleted from wishlist`);
   };
 
   return (
@@ -31,7 +38,10 @@ const WishListSingleCard = ({ singleWishlistData }) => {
           </button>
         </div>
       </div>
-      <button className="btn btn-sm btn-circle btn-outline absolute right-2 top-2 text-purple-700">
+      <button
+        className="btn btn-sm btn-circle btn-outline absolute right-2 top-2 text-purple-700"
+        onClick={() => handleWishListDelete(singleWishlistData)}
+      >
         ✕
       </button>
     </div>

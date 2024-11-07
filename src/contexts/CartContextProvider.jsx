@@ -8,10 +8,11 @@ const CartContextProvider = ({ children }) => {
 
   const handleAddToCart = (product) => {
     const existInWishList = cartData.find((cart) => cart.product_id === product.product_id);
-    // console.log(existInWishList);
     if (!existInWishList) {
       setCartData([...cartData, product]);
-      toast.success("Product added to cart");
+      toast.success(`${product.name} added to cart`);
+    }else{
+      toast.warning(`${product.name} already in cart`);
     }
   };
 

@@ -26,6 +26,8 @@ const ProductDetailsCard = ({ productData }) => {
     if (!existInWishList) {
       setWishList([...wishList, product]);
       toast.success("Product added is wishlist");
+    }else{
+      toast.warning("Product already in wishlist");
     }
   };
 

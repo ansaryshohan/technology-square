@@ -1,13 +1,16 @@
+import { toast } from "react-toastify";
 import useCartContext from "../../hooks/useCartContext";
 
 const CartSingleCard = ({ singleCartData }) => {
   const { cartData, setCartData } = useCartContext();
   const { name, image, price, description } = singleCartData;
+
   const handleCartDelete = (product) => {
     const remaining = cartData.filter(
       (singleData) => singleData.product_id !== product.product_id
     );
-    setCartData(remaining)
+    setCartData(remaining);
+    toast.error(`${product.name} is deleted from cart`)
   };
 
   return (
