@@ -57,6 +57,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "/statistics",
+        loader: () => fetch("/product.json"),
         element: <StatisticsPage/>,
       },
       {

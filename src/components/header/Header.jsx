@@ -59,6 +59,14 @@ const Header = () => {
               >
                 Dashboard
               </NavLink>
+              <NavLink
+              to={"/contact-us"}
+              className={({ isActive }) =>
+                isActive ? " text-gray-400 font-semibold" : ""
+              }
+            >
+              Contact Us
+            </NavLink>
             </ul>
           </div>
           <Link to={"/"} className="text-xl font-bold">

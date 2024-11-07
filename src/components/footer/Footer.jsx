@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div>
@@ -9,10 +11,18 @@ const Footer = () => {
         <div className="w-10/12 mx-auto footer p-10 flex justify-between gap-10">
           <nav>
             <h6 className="footer-title">Services</h6>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <Link to={"/"} className="link link-hover">
+              Home
+            </Link>
+            <Link to={"/statistics"} className="link link-hover">
+              Statistics
+            </Link>
+            <Link to={"/dashboard"} className="link link-hover">
+              Dashboard
+            </Link>
+            <Link to={"/contact-us"} className="link link-hover">
+              Contact Us
+            </Link>
           </nav>
           <nav>
             <h6 className="footer-title">Company</h6>
