@@ -1,4 +1,4 @@
-# Project Name : [Gadget-world](https://despicable11.netlify.app/)
+# Project Name : [Gadget-world](https://gadget-world-project.netlify.app/)
 
 ## **About the Project**
 >>> This project is done with `React.js`,`Tailwind css`,`React-router-dom`. the project is on e-commerce gadgets, where you can buy different products.
